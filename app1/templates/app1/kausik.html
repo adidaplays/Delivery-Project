@@ -1,0 +1,290 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="{% static 'app1/hotels.css' %}">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+<title>Swad Trip</title>
+</head>
+
+<body>
+
+    {#  navigation part  #}
+    <nav class="navbar">
+        <div class="logo">
+            <img src="{% static 'app1/images/logo.png' %}" alt="logo">
+        </div>
+
+        <section class="search">
+        <div class="search-box">
+                <input type="text" placeholder="Search for food items..." />
+                <button><i class="fa-solid fa-magnifying-glass"></i></button>
+            </div>
+        </section>
+
+        <div class="auth">
+            <a href="#" class="login">Login</a>
+            <a href="#" class="register">Register</a>    
+        </div>
+    </nav>
+
+    <section class="bgimg">
+        <div class=" spot bg">
+            <div class="h-logo h"></div>
+            <div class="h-text h">
+                <h2>Kaushik- Garden Restaurant </h2> <br>
+                <p><i class="fa-solid fa-location-dot"></i> Khajura, Surkhet</p>
+        </div>
+        </div>
+    </section>
+
+    <section class="menu-bar">
+        <p>Menu</p>
+    </section>
+ 
+    <section class="menu-items">
+ {#  cart for chowmin  #}
+        <p class="category">Chowmin Items</p>
+        <div class="main-food">
+
+            <div class="food-div">
+                <div class="food-img ch1"></div>
+                <div class="food-text">
+                        <p class="item-name">Veg Chowmien</p>
+                        <p class="price">Rs.</p>
+                        <button class="order-btn">Order now</button>
+                </div>
+            </div>
+            <div class="food-div">
+                <div class="food-img ch2"></div>
+                <div class="food-text">
+                        <p class="item-name">Egg Chowmien</p>
+                        <p class="price">Rs.</p>
+                        <button class="order-btn">Order now</button>
+                </div>
+            </div>
+            <div class="food-div">
+                <div class="food-img ch3"></div>
+                <div class="food-text">
+                        <p class="item-name">Chicken Chowmien</p>
+                        <p class="price">Rs.</p>
+                        <button class="order-btn">Order now</button>
+                </div>
+            </div>
+        </div>
+        <hr>
+{#  cart for momo  #}
+        <p class="category">MoMo Items</p>
+        <div class="main-food">
+
+            <div class="food-div">
+                <div class="food-img momo1"></div>
+                <div class="food-text">
+                        <p class="item-name">Veg MoMo</p>
+                        <p class="price">Rs.</p>
+                        <button class="order-btn">Order now</button>
+                </div>
+            </div>
+            <div class="food-div">
+                <div class="food-img momo2"></div>
+                <div class="food-text">
+                        <p class="item-name">Chicken Steam MoMo</p>
+                        <p class="price">Rs.</p>
+                        <button class="order-btn">Order now</button>
+                </div>
+            </div>
+            <div class="food-div">
+                <div class="food-img momo3"></div>
+                <div class="food-text">
+                        <p class="item-name">Chicken Jhol MoMo</p>
+                        <p class="price">Rs.</p>
+                        <button class="order-btn">Order now</button>
+                </div>
+            </div>
+            <div class="food-div">
+                <div class="food-img momo4"></div>
+                <div class="food-text">
+                        <p class="item-name">Chicken Fry MoMo</p>
+                        <p class="price">Rs.</p>
+                        <button class="order-btn">Order now</button>
+                </div>
+            </div>
+            <div class="food-div">
+                <div class="food-img momo5"></div>
+                <div class="food-text">
+                        <p class="item-name">Buff MoMo</p>
+                        <p class="price">Rs.</p>
+                        <button class="order-btn">Order now</button>
+                </div>
+            </div>
+        </div>
+        <hr>
+{#  cart for chicken items  #}
+        <p class="category">Chicken Items</p>
+        <div class="main-food">
+
+            <div class="food-div">
+                <div class="food-img chi1"></div>
+                <div class="food-text">
+                        <p class="item-name">Chicken Lollipop</p>
+                        <p class="price">Rs.</p>
+                        <button class="order-btn">Order now</button>
+                </div>
+            </div>
+            <div class="food-div">
+                <div class="food-img chi2"></div>
+                <div class="food-text">
+                        <p class="item-name">Chicken Hot Wings</p>
+                        <p class="price">Rs.</p>
+                        <button class="order-btn">Order now</button>
+                </div>
+            </div>
+            <div class="food-div">
+                <div class="food-img chi3"></div>
+                <div class="food-text">
+                        <p class="item-name">Chicken Leg Piece</p>
+                        <p class="price">Rs.</p>
+                        <button class="order-btn">Order now</button>
+                </div>
+            </div>
+            <div class="food-div">
+                <div class="food-img chi4"></div>
+                <div class="food-text">
+                        <p class="item-name">Chicken Curry</p>
+                        <p class="price">Rs.</p>
+                        <button class="order-btn">Order now</button>
+                </div>
+            </div>
+        </div>
+        <hr>
+{#  cart for fry rice  #}
+        <p class="category">Fry Rice</p>
+        <div class="main-food">
+
+            <div class="food-div">
+                <div class="food-img fr1"></div>
+                <div class="food-text">
+                        <p class="item-name">Veg fryrice</p>
+                        <p class="price">Rs.</p>
+                        <button class="order-btn">Order now</button>
+                </div>
+            </div>
+            <div class="food-div">
+                <div class="food-img fr2"></div>
+                <div class="food-text">
+                        <p class="item-name">Egg fryrice</p>
+                        <p class="price">Rs.</p>
+                        <button class="order-btn">Order now</button>
+                </div>
+            </div>
+            <div class="food-div">
+                <div class="food-img fr3"></div>
+                <div class="food-text">
+                        <p class="item-name">Chicken fryrice</p>
+                        <p class="price">Rs.</p>
+                        <button class="order-btn">Order now</button>
+                </div>
+            </div>
+            <div class="food-div">
+                <div class="food-img fr4"></div>
+                <div class="food-text">
+                        <p class="item-name">Buff fryrice</p>
+                        <p class="price">Rs.</p>
+                        <button class="order-btn">Order now</button>
+                </div>
+            </div>
+        </div>
+        <hr>
+{#  cart for salad items  #}
+        <p class="category">Salad Items</p>
+        <div class="main-food">
+
+            <div class="food-div">
+                <div class="food-img s1"></div>
+                <div class="food-text">
+                        <p class="item-name">Vegetable Salad</p>
+                        <p class="price">Rs.</p>
+                        <button class="order-btn">Order now</button>
+                </div>
+            </div>
+            <div class="food-div">
+                <div class="food-img s2"></div>
+                <div class="food-text">
+                        <p class="item-name">Russian Salad</p>
+                        <p class="price">Rs.</p>
+                        <button class="order-btn">Order now</button>
+                </div>
+            </div>
+            <div class="food-div">
+                <div class="food-img s3"></div>
+                <div class="food-text">
+                        <p class="item-name">Fruits Salad</p>
+                        <p class="price">Rs.</p>
+                        <button class="order-btn">Order now</button>
+                </div>
+            </div>
+        </div>
+        <hr>
+{#  kaushik special items  #}
+        <p class="category">Kaushik Specials</p>
+        <div class="main-food">
+
+            <div class="food-div">
+                <div class="food-img kau1"></div>
+                <div class="food-text">
+                        <p class="item-name">Veg Khaja Set</p>
+                        <p class="price">Rs.</p>
+                        <button class="order-btn">Order now</button>
+                </div>
+            </div>
+            <div class="food-div">
+                <div class="food-img kau2"></div>
+                <div class="food-text">
+                        <p class="item-name">Chicken Combo</p>
+                        <p class="price">Rs.</p>
+                        <button class="order-btn">Order now</button>
+                </div>
+            </div>
+            <div class="food-div">
+                <div class="food-img kau3"></div>
+                <div class="food-text">
+                        <p class="item-name">Mixed Special</p>
+                        <p class="price">Rs.</p>
+                        <button class="order-btn">Order now</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <hr>
+
+    <section class="contact" id="contact">
+        <ul class="contact-items"><p>WE'RE स्वादTrip</p>
+            <li class="a"><a href=""></a>About Us</li>
+            <li class="a"><a href=""></a>Delivery Charges</li>     
+        </ul>
+        <hr>
+        <ul class="contact-items"><p>GET HELP</p>
+            <li class="a"><a href=""></a>How to Order?</li>
+            <li class="a"><a href=""></a>FAQs</li>
+            <li class="a"><a href=""></a>Contact Us</li>
+        </ul>
+        <hr>
+        <ul class="contact-items"><p>REACH US</p>
+            <li>We are initially serving in Surkhet and</li>
+            <li>studying for expand of the reach in</li>
+            <li class="b">other major cities all over the Nepal.</li>
+            <p>Contact details</p>
+            <li>98XXXXXXXX,053-XXXXX,</li>
+            <li>XXXXX,+977-XXXXXXXXX</li>
+        </ul>
+    </section>
+    {#  footer section  #}
+    <footer>
+        <hr>
+        <p class="copyright">&copy; स्वादTrip Pvt.Ltd. All Rights Reserved.</p>
+    </footer>
+
+</body>
