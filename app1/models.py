@@ -19,3 +19,7 @@ class Customer(models.Model):
 
     def __str__(self):
         return self.username
+    
+
+
+# class menu(models.Model):

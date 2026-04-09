@@ -3,7 +3,7 @@ from django.contrib.auth import authenticate, login
 from .models import Customer
 from django.contrib import messages
 from django.contrib.auth import logout
-from .restrict import redirect_if_logged_in
+from .restrict import redirect_if_logged_in,noentry_order
 
 
 def landing_page(request):
@@ -95,4 +95,7 @@ def logout_view(request):
     request.session.flush()
     return redirect('landing')
 
-
+@noentry_order
+def order(request):
+    username = request.session.get('user_username')
+    return render(request, 'app1/order.html',{'username':username})
